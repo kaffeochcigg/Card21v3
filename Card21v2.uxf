@@ -4,9 +4,9 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>180</x>
-      <y>120</y>
-      <w>240</w>
+      <x>360</x>
+      <y>220</y>
+      <w>370</w>
       <h>380</h>
     </coordinates>
     <panel_attributes>System
@@ -16,8 +16,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>10</x>
-      <y>140</y>
+      <x>190</x>
+      <y>240</y>
       <w>60</w>
       <h>110</h>
     </coordinates>
@@ -27,8 +27,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>180</x>
-      <y>150</y>
+      <x>370</x>
+      <y>250</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -38,8 +38,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>180</x>
-      <y>450</y>
+      <x>370</x>
+      <y>520</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -49,8 +49,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>0</x>
-      <y>380</y>
+      <x>190</x>
+      <y>480</y>
       <w>60</w>
       <h>110</h>
     </coordinates>
@@ -60,30 +60,30 @@ halign=left</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>30</x>
-      <y>150</y>
-      <w>170</w>
+      <x>210</x>
+      <y>250</y>
+      <w>180</w>
       <h>50</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;30.0;150.0;20.0</additional_attributes>
+    <additional_attributes>10.0;30.0;160.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>20</x>
-      <y>410</y>
+      <x>210</x>
+      <y>510</y>
       <w>180</w>
-      <h>80</h>
+      <h>50</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;160.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;30.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>180</x>
-      <y>200</y>
+      <x>370</x>
+      <y>300</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -93,8 +93,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>180</x>
-      <y>250</y>
+      <x>370</x>
+      <y>350</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
@@ -104,29 +104,29 @@ halign=left</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>30</x>
-      <y>170</y>
-      <w>170</w>
+      <x>210</x>
+      <y>270</y>
+      <w>180</w>
       <h>120</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;150.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>30</x>
-      <y>170</y>
-      <w>170</w>
+      <x>210</x>
+      <y>270</y>
+      <w>180</w>
       <h>70</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;10.0;150.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>300</x>
+      <x>550</x>
       <y>300</y>
       <w>120</w>
       <h>40</h>
@@ -137,7 +137,7 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>300</x>
+      <x>550</x>
       <y>350</y>
       <w>120</w>
       <h>40</h>
@@ -148,8 +148,8 @@ halign=left</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>230</y>
+      <x>980</x>
+      <y>580</y>
       <w>310</w>
       <h>100</h>
     </coordinates>
@@ -158,110 +158,94 @@ halign=left</panel_attributes>
 playerName
 playersPoints
 --
-newplayer()</panel_attributes>
+Newplayer()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>550</x>
-      <y>390</y>
-      <w>210</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>_object: dealer
---
-id: Long="36548"
-[waiting for message]</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>570</x>
-      <y>110</y>
+      <x>1020</x>
+      <y>380</y>
       <w>210</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>_object: Deck
 --
-cardList
+cards : List&lt;Card&gt;
 --
 Shuffle()
-Draw()
+Draw() : Card
 Reset()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>490</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>__object: Card
+--
+Value
+Suit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>160</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>_object: Game
+--
+--
+Player: player
+Dealer: player
+
+Hit()
+Stay()
+Win(): count = 5 &amp;&amp; value &lt; 21
+Lose()
+--
+PlayerDraw()
+DealerDraw()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>20</x>
-      <y>380</y>
-      <w>150</w>
-      <h>60</h>
+      <x>210</x>
+      <y>370</y>
+      <w>190</w>
+      <h>170</h>
     </coordinates>
-    <panel_attributes>lt=-
-m1=0..n
-m2=0..1
-teaches to &gt;</panel_attributes>
-    <additional_attributes>10.0;40.0;130.0;10.0</additional_attributes>
+    <panel_attributes/>
+    <additional_attributes>170.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>320</y>
+      <w>190</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>170.0;10.0;10.0;200.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>1360</x>
-      <y>350</y>
+      <x>550</x>
+      <y>400</y>
       <w>120</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>Use case 1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>1410</x>
-      <y>360</y>
-      <w>140</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>Package 1
---
--Content 1
-+Content 2
-bg=gray
-fg=red</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>580</x>
-      <y>510</y>
-      <w>210</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>cards
---
-id: Long="36548"
-[waiting for message]</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>900</x>
-      <y>370</y>
-      <w>210</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>_object: Game
---
---
-Hit()
-Stay()
-Win()
-Lose()</panel_attributes>
+    <panel_attributes>Tie</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
