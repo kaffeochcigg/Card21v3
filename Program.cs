@@ -13,29 +13,36 @@ namespace Card21
     }
     class Deck
     {
-        public enum Suits
-        {
-            Heart,
-            Diamond,
-            Spade,
-            Clubs
-        }
-        public enum Value
-        {
-            Ace,
-            Two,
-            Three,
-            Four,
-            Five,
-            Six,
-            Seven,
-            Eight,
-            Nine,
-            Ten,
-            Jack,
-            Queen,
-            King
-        }
+        public string[] suits = {"Heart", "Diamond", "Spade", "Clubs" };
+
+        public string[] value = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+
+        public List<Tuple<string, string, int>> deck = new List<Tuple<string, string, int>>();
+
+
+            //public enum Suits
+            //{
+            //    Heart,
+            //    Diamond,
+            //    Spade,
+            //    Clubs
+            //}
+            //public enum Value
+            //{
+            //Ace,
+            //Two,
+            //Three,
+            //Four,
+            //Five,
+            //Six,
+            //Seven,
+            //Eight,
+            //Nine,
+            //Ten,
+            //Jack,
+            //Queen,
+            //King
+        //}
         //static void CardSort()
         //{
         //    List<Card>cardlist = new List<Card>();
@@ -62,8 +69,8 @@ class Dealer
             Console.WriteLine($"Welcome {player.playerName}!");
             Deck deck = new Deck();
             // Console.WriteLine(Deck.Suits.Clubs);
-            var values = Enum.GetValues(typeof(Deck.Suits));
-            Console.WriteLine(values);
+        //    var values = Enum.GetValues(typeof(Deck.suits));
+        //    Console.WriteLine(values);
         }
     }
 }
