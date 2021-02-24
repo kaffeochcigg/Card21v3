@@ -11,7 +11,7 @@ namespace Card21
     {
         class player
         {
-            public string = "player1"
+            //public string = "player1"
 
         }
 
