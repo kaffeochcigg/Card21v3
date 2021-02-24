@@ -53,6 +53,8 @@ namespace Card21
         //            cardlist.Add(new Card(s, v));
         //        }
         //    }
+
+
 }
 class Dealer
     {
@@ -69,8 +71,22 @@ class Dealer
             Console.WriteLine($"Welcome {player.playerName}!");
             Deck deck = new Deck();
             // Console.WriteLine(Deck.Suits.Clubs);
-        //    var values = Enum.GetValues(typeof(Deck.suits));
-        //    Console.WriteLine(values);
+            //    var values = Enum.GetValues(typeof(Deck.suits));
+            //    Console.WriteLine(values);
+
+            //skapa en kortlek
+            int j = 1;
+
+         foreach (string i in deck.suits)
+         {
+                foreach (string a in deck.value)
+                {
+                    deck.deck.AddRange(i, a, j);
+
+                }
+
+         }
+
         }
     }
 }
